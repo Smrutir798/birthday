@@ -11,6 +11,12 @@
         <input type="text" name="Name" placeholder="Name">
         <input type="date" name="Date_of_birth" placeholder="Date of birth">
         <button type="submit">Submit</button>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = 'birthday.html';
+        });
+    </script>
     </form>
     <script src="script.js"></script>
 </body>
