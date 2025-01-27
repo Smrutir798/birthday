@@ -17,6 +17,12 @@
                 <span id="name"></span>
                 🎉🎉
             </h1>
+            <script>
+                const name = sessionStorage.getItem('name') || getNameFromScript(); // Assuming getNameFromScript is defined in script.js
+                if (name) {
+                    document.getElementById('name').textContent = name;
+                }
+            </script>
                 <p>
                 🎉 Congratulations on being even more experienced! 🌟
                  I’m not sure what you learned this year, but every 
@@ -25,17 +31,11 @@
                  envision 🌠, fight for them with determination 💪, 
                  and tackle every challenge that comes your way. 🚀✨
                 </p>
-            <script>
-                const name = sessionStorage.getItem('name');
-                if (name) {
-                    document.getElementById('name').textContent = name;
-                }
-            </script>
-
+            
             <button type="button">Let's cut the cake..</button>
         </div>
     </div>
     <script src="script2.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
