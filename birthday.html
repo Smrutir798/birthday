@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <p>
+                IT'S SEEM LIKE TODAY IS YOUR BIRTHDAY! 🎂🎉
+            </p>
+            <h1>
+                Happy Birthday! 
+                <span id="name"></span>
+                🎉🎉
+            </h1>
+                <p>
+                🎉 Congratulations on being even more experienced! 🌟
+                 I’m not sure what you learned this year, but every 
+                 experience transforms us into the people we are today. 
+                 🌈 Happy birthday! 🎂🎁 Always chase the dreams you 
+                 envision 🌠, fight for them with determination 💪, 
+                 and tackle every challenge that comes your way. 🚀✨
+                </p>
+            <script>
+                const name = sessionStorage.getItem('name');
+                if (name) {
+                    document.getElementById('name').textContent = name;
+                }
+            </script>
+
+            <button type="button">Let's cut the cake..</button>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+
+</body>
+</html>
