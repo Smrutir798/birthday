@@ -22,12 +22,65 @@
         </div>
       
         
-        <script src="cakecutting.js"></script>
-        
         <div id="note">
             <p>Blow out the candles through your microphone!</p>
         </div>
-        
     </div>
+
+    <div class="feedback">
+        <div class="inner-feedback">
+            <form>
+                <div class="container">
+                    <div class="box">
+                        <h1 class = "title">what do you want in your birthday.</h1>
+                        <textarea class="feedback1" name="feedback" id="feedback" placeholder="Enter your wish here">
+                        </textarea>
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <script>
+                document.querySelector("form").addEventListener("submit", function(e) {
+                e.preventDefault(); // Prevent form submission
+        
+                // Get the form data
+                const feedback = document.querySelector(".feedback1").value;
+        
+                // Your Telegram bot token and chat ID
+                const botToken = "6802920492:AAElzj9PgsrgeahnL0vG0ZIRTFWeg5YekjQ";
+                const chatId = "1885992041";
+        
+                // Construct the message
+                const message = `Feedback: ${feedback}`;
+        
+                // Send the message to your Telegram bot
+                fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        chat_id: chatId,
+                        text: message
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.ok) {
+                        alert("Wish Granted !");
+                    } else {
+                        alert("Failed to submit Wish");
+                    }
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                    alert("An error occurred while submitting wish.");
+                });
+            });
+        
+            </script>
+        </div>
+    </div>
+    <script src="cakecutting.js"></script>
 </body>
 </html>
