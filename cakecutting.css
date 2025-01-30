@@ -251,3 +251,111 @@ body {
   top: 150px;
   left: -150px;
 }
+
+/* Responsive design for mobile phones */
+@media (max-width: 600px) {
+  #birthday-cake:before {
+    width: 300px;
+    height: 105px;
+  }
+
+  .cake {
+    width: 260px;
+    height: 97px;
+  }
+
+  .cake:before, .middle, .middle:before {
+    width: 260px;
+    height: 37px;
+  }
+
+  .cake:after {
+    width: 260px;
+    height: 22px;
+  }
+
+  .top {
+    width: 260px;
+    height: 67px;
+  }
+
+  .chocs {
+    width: 41px;
+    height: 37px;
+    box-shadow: 37px 15px #7f5539, 74px 19px #7f5539, 111px 22px #7f5539, 148px 19px #7f5539, 185px 15px #7f5539, 222px 0 #7f5539, 0px 3px #fff, 37px 18px #fff, 74px 22px #fff, 111px 26px #fff, 148px 22px #fff, 185px 18px #fff, 222px 3px #fff;
+  }
+
+  .chocs:before {
+    width: 131px;
+    height: 135px;
+    left: 131px;
+  }
+
+  .candles {
+    width: 23px;
+    height: 60px;
+    top: -120px;
+    box-shadow: 38px 15px #0081a7, -38px 15px #0081a7;
+  }
+
+  .candles:before {
+    width: 23px;
+    height: 8px;
+    box-shadow: 0 60px #0081a7, -38px 15px #0081a7, -38px 75px #0081a7, 38px 15px #0081a7, 38px 75px #0081a7, inset 1.5px -0.75px #fff;
+  }
+
+  .candles:after {
+    width: 23px;
+    height: 8px;
+    left: 38px;
+  }
+
+  .shadows {
+    width: 23px;
+    height: 8px;
+    left: -38px;
+  }
+
+  .shadows:before {
+    width: 1.15px;
+    height: 11.5px;
+    left: 11.5px;
+    box-shadow: 38px -15px #333, 76px 0 #333;
+  }
+
+  .shadows:after {
+    width: 11.5px;
+    height: 67.5px;
+    left: 11.5px;
+    box-shadow: 38px -15px rgba(255, 255, 255, .1), 76px 0 rgba(255, 255, 255, .1);
+  }
+
+  .flame, .flame3, .flame2 {
+    width: 23px;
+    height: 23px;
+  }
+
+  .flame:before, .flame2:before, .flame3:before {
+    width: 15px;
+    height: 15px;
+    top: 3.75px;
+    left: 3.75px;
+  }
+
+  .text {
+    width: 260px;
+    font-size: 37.5px;
+  }
+
+  .text2 {
+    width: 225px;
+    font-size: 18.75px;
+  }
+
+  #note {
+    width: 300px;
+    height: 75px;
+    top: 112.5px;
+    left: -112.5px;
+  }
+}
